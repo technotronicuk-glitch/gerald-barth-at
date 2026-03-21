@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | Gerald Barth Logistik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
+    <style>
+        .tech-font { font-family: 'Ethnocentric', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-50 font-sans text-zinc-900 min-h-screen flex flex-col">
+
+    <div id="header-placeholder"></div>
+
+    <main class="flex-grow max-w-4xl mx-auto py-24 px-6">
+        <div class="bg-white p-10 md:p-16 rounded-2xl shadow-sm border border-zinc-200">
+            
+            <header class="mb-12 border-b border-zinc-100 pb-8">
+                <h1 class="tech-font text-3xl mb-2 italic uppercase tracking-tighter">Impressum</h1>
+                <p class="text-zinc-500 text-[10px] font-black uppercase tracking-[0.3em]">Offenlegung gemäß § 25 Mediengesetz</p>
+            </header>
+
+            <div class="grid md:grid-cols-2 gap-12 text-sm leading-relaxed">
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-black uppercase text-xs tracking-widest text-yellow-600 mb-2">Diensteanbieter</h3>
+                        <p class="font-bold text-lg">Gerald Barth</p>
+                        <p class="text-zinc-600">Logistik & Erdbau</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-black uppercase text-xs tracking-widest text-yellow-600 mb-2">Standort</h3>
+                        <p class="text-zinc-600">Untergaisberg 4<br>4352 Untergaisberg<br>Österreich</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-black uppercase text-xs tracking-widest text-yellow-600 mb-2">Kontakt</h3>
+                        <p class="text-zinc-600">E-Mail: <a href="mailto:office@gerald-barth.at" class="text-blue-600 hover:underline">office@gerald-barth.at</a></p>
+                        <p class="text-zinc-600">Web: <a href="https://technotronicuk-glitch.github.io/gerald-barth-at/" class="text-blue-600 hover:underline">www.gerald-barth.at</a></p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-black uppercase text-xs tracking-widest text-yellow-600 mb-2">Rechtliches</h3>
+                        <p class="text-zinc-600"><span class="font-bold text-zinc-900">UID-Nummer:</span> [FN609440k]</p>
+                        <p class="text-zinc-600"><span class="font-bold text-zinc-900">Gewerbebehörde:</span> Bezirkshauptmannschaft Perg</p>
+                        <p class="text-zinc-600"><span class="font-bold text-zinc-900">Anwendbare Rechtsvorschriften:</span> <a href="https://www.ris.bka.gv.at" target="_blank" class="hover:underline">www.ris.bka.gv.at</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-zinc-100 text-[11px] text-zinc-400 space-y-4">
+                <p><span class="font-bold text-zinc-600 uppercase">Haftung für Inhalte:</span> Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+                <p><span class="font-bold text-zinc-600 uppercase">Urheberrecht:</span> Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+    </script>
+
+</body>
+</html>
