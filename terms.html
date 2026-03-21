@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGB | Gerald Barth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
+    <style>.tech-font { font-family: 'Ethnocentric', sans-serif; }</style>
+</head>
+<body class="bg-zinc-50 font-sans text-zinc-900">
+    <div id="header-placeholder"></div>
+    <main class="max-w-4xl mx-auto py-24 px-6">
+        <div class="bg-white p-10 md:p-16 rounded-2xl shadow-sm border border-zinc-200">
+            <h1 class="tech-font text-3xl mb-8 italic uppercase tracking-tighter text-yellow-500">AGB</h1>
+            <p class="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-10">Allgemeine Geschäftsbedingungen</p>
+            
+            <div class="space-y-8 text-sm leading-relaxed text-zinc-600">
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">§1 Geltungsbereich</h3>
+                    <p>Diese Geschäftsbedingungen gelten für alle Lieferungen von Sand, Kies und Rohstoffen sowie für alle Transport- und Erdbauleistungen der Firma Gerald Barth Sandgewinnung & Transporte e.U.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">§2 Angebote und Preise</h3>
+                    <p>Unsere Angebote sind freibleibend. Alle Preise verstehen sich, sofern nicht anders angegeben, exklusive der gesetzlichen Umsatzsteuer. Lieferkosten werden je nach Entfernung und Aufwand berechnet.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">§3 Lieferung und Abnahme</h3>
+                    <p>Die Lieferung erfolgt an die vom Kunden angegebene Adresse. Der Kunde hat für eine befahrbare Zufahrtsmöglichkeit für schwere LKW zu sorgen. Verzögerungen durch ungeeignete Zufahrten gehen zu Lasten des Kunden.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">§4 Gewährleistung</h3>
+                    <p>Naturprodukte wie Sand und Kies können in Farbe und Körnung schwanken. Solche natürlichen Abweichungen stellen keinen Mangel dar.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script>
+        fetch('header.html').then(res => res.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
