@@ -197,6 +197,39 @@
 </style>
     </style>
 
+<section id="newsletter" class="py-24 bg-zinc-900 px-6 border-t border-white/5">
+    <div class="max-w-4xl mx-auto bg-yellow-500 rounded-3xl p-10 md:p-16 relative overflow-hidden shadow-2xl shadow-yellow-500/10">
+        
+        <div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+            <svg class="w-64 h-64 translate-x-10 -translate-y-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        </div>
+
+        <div class="relative z-10 text-center md:text-left grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="tech-font text-3xl text-black uppercase tracking-tighter italic leading-none mb-4">
+                    Mailing-<span class="text-white">Liste</span>
+                </h2>
+                <p class="text-black/70 text-xs font-black uppercase tracking-[0.2em]">
+                    Erhalten Sie Updates zu Materialverfügbarkeit & Projekten in Untergaisberg.
+                </p>
+            </div>
+
+            <form action="https://formspree.io/f/your_formspree_id" method="POST" class="flex flex-col sm:flex-row gap-3">
+                <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required
+                    class="flex-grow px-6 py-4 bg-white/20 border border-black/10 rounded-xl focus:outline-none focus:bg-white transition-all placeholder:text-black/40 text-black font-bold">
+                <button type="submit" 
+                    class="bg-black text-white font-black uppercase tracking-widest px-8 py-4 rounded-xl hover:bg-zinc-800 transition shadow-xl active:scale-[0.95] text-[10px]">
+                    Beitreten
+                </button>
+            </form>
+        </div>
+
+        <p class="mt-8 text-[9px] text-black/40 uppercase font-black tracking-widest text-center">
+            Mit der Anmeldung akzeptieren Sie unsere <a href="privacy.html" class="underline">Datenschutzbestimmungen</a>.
+        </p>
+    </div>
+</section>
+      
     <footer class="bg-black pt-24 pb-12 border-t border-white/5 px-6">
     <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
