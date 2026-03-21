@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karriere | Gerald Barth Logistik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
+    <style>
+        .tech-font { font-family: 'Ethnocentric', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-50 font-sans text-zinc-900">
+
+    <div id="header-placeholder"></div>
+
+    <main class="max-w-4xl mx-auto py-24 px-6">
+        <div class="grid md:grid-cols-3 gap-12">
+            
+            <div class="md:col-span-1 space-y-8">
+                <div>
+                    <h1 class="tech-font text-3xl mb-4 italic uppercase tracking-tighter text-zinc-900">
+                        Karriere
+                    </h1>
+                    <p class="text-zinc-500 text-[10px] font-black uppercase tracking-[0.3em]">
+                        Untergaisberg, Österreich
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="font-black uppercase text-xs tracking-widest text-yellow-600">Offene Positionen</h3>
+                    <div class="space-y-2 text-sm font-bold">
+                        <p class="p-3 bg-white border border-zinc-200 rounded shadow-sm">• LKW-Fahrer (m/w/d)</p>
+                        <p class="p-3 bg-white border border-zinc-200 rounded shadow-sm">• Baggerfahrer (m/w/d)</p>
+                        <p class="p-3 bg-white border border-zinc-200 rounded shadow-sm">• Facharbeiter Erdbau</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 bg-white p-10 rounded-2xl shadow-xl border border-zinc-100">
+                <h2 class="text-2xl font-bold mb-8">Jetzt <span class="text-blue-600">Bewerben</span></h2>
+                
+                <form action="#" method="POST" enctype="multipart/form-data" class="space-y-5">
+                    
+                    <div>
+                        <input type="text" name="name" placeholder="Name" required
+                            class="w-full px-4 py-4 bg-white border border-zinc-300 rounded focus:ring-2 focus:ring-blue-600 focus:outline-none transition-all">
+                    </div>
+
+                    <div>
+                        <input type="tel" name="phone" placeholder="Telefonnummer"
+                            class="w-full px-4 py-4 bg-white border border-zinc-300 rounded focus:ring-2 focus:ring-blue-600 focus:outline-none transition-all">
+                    </div>
+
+                    <div>
+                        <input type="email" name="email" placeholder="E-Mail*" required
+                            class="w-full px-4 py-4 bg-white border border-zinc-300 rounded focus:ring-2 focus:ring-blue-600 focus:outline-none transition-all">
+                    </div>
+
+                    <div>
+                        <textarea name="message" placeholder="Nachricht" rows="4"
+                            class="w-full px-4 py-4 bg-white border border-zinc-300 rounded focus:ring-2 focus:ring-blue-600 focus:outline-none transition-all resize-none"></textarea>
+                    </div>
+
+                    <div class="flex justify-between items-center py-4 border-t border-zinc-100">
+                        <label class="flex items-center gap-2 text-blue-600 font-bold cursor-pointer hover:text-blue-800 transition text-sm">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
+                            <span>Lebenslauf anhängen</span>
+                            <input type="file" name="resume" class="hidden">
+                        </label>
+                        <span class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">Anhänge (0)</span>
+                    </div>
+
+                    <button type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-[0.2em] py-5 rounded shadow-lg active:scale-[0.98] transition-all text-xs">
+                        Bewerbung absenden
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data);
+    </script>
+
+</body>
+</html>
