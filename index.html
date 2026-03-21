@@ -64,32 +64,69 @@
             <img src="Office%202.jfif" class="w-1/2 h-64 object-cover rounded-xl border border-white/10 shadow-2xl mt-8">
         </div>
     </div>
-
-    <section id="gallery" class="py-24 bg-zinc-900 overflow-hidden">
+<section id="gallery" class="py-24 bg-zinc-900 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 mb-12">
         <h3 class="tech-font text-2xl text-white uppercase tracking-widest border-b border-yellow-500/30 pb-4 italic">
-            Unser <span class="text-yellow-400">Fuhrpark</span> in Aktion
+            Unser <span class="text-yellow-400">Fuhrpark</span>
         </h3>
     </div>
 
     <div class="relative w-full flex overflow-hidden group">
         <div class="flex animate-marquee whitespace-nowrap gap-6 hover:pause">
-            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden group rounded-xl">
-                <img src="maschinenpark.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-700">
-                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-3 text-xs font-black tech-font uppercase">Maschinenpark</div>
+            
+            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden rounded-xl">
+                <img src="wacker-neuson-et90.jpg" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-2 text-[10px] font-black tech-font uppercase">Wacker Neuson ET90</div>
             </div>
-            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden group rounded-xl">
-                <img src="takeuchi-tb250.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
-                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-3 text-xs font-black tech-font">TAKEUCHI TB250</div>
+
+            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden rounded-xl">
+                <img src="takeuchi-tb250.jpg" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-2 text-[10px] font-black tech-font uppercase">Takeuchi TB250</div>
             </div>
-            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden group rounded-xl">
-                <img src="maschinenpark.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+
+            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden rounded-xl">
+                <img src="tieflader.jpg" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-2 text-[10px] font-black tech-font uppercase">Tieflader</div>
             </div>
-            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden group rounded-xl">
-                <img src="takeuchi-tb250.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+
+            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden rounded-xl">
+                <img src="traktor-tandemkipper.jpg" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-2 text-[10px] font-black tech-font uppercase">Tandemkipper</div>
             </div>
+
+            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden rounded-xl">
+                <img src="traktor-holzrueckewagen.jpg" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-2 text-[10px] font-black tech-font uppercase">Holzrückewagen</div>
+            </div>
+
+            <div class="w-[450px] aspect-video shrink-0 bg-black border border-white/10 relative overflow-hidden rounded-xl">
+                <img src="maschinenpark.jpg" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 bg-yellow-400 text-black p-2 text-[10px] font-black tech-font uppercase">Fuhrpark</div>
+            </div>
+
+            <div class="w-[450px] aspect-video shrink-0"><img src="wacker-neuson-et90.jpg" class="w-full h-full object-cover rounded-xl"></div>
+            <div class="w-[450px] aspect-video shrink-0"><img src="takeuchi-tb250.jpg" class="w-full h-full object-cover rounded-xl"></div>
+            <div class="w-[450px] aspect-video shrink-0"><img src="tieflader.jpg" class="w-full h-full object-cover rounded-xl"></div>
+            <div class="w-[450px] aspect-video shrink-0"><img src="traktor-tandemkipper.jpg" class="w-full h-full object-cover rounded-xl"></div>
+            <div class="w-[450px] aspect-video shrink-0"><img src="traktor-holzrueckewagen.jpg" class="w-full h-full object-cover rounded-xl"></div>
+            <div class="w-[450px] aspect-video shrink-0"><img src="maschinenpark.jpg" class="w-full h-full object-cover rounded-xl"></div>
         </div>
     </div>
+</section>
+
+<style>
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); } /* This moves exactly half the track */
+    }
+    .animate-marquee {
+        /* 30 seconds for 6 images = 5s per pic */
+        animation: marquee 30s linear infinite;
+    }
+    .hover\:pause:hover {
+        animation-play-state: paused;
+    }
+</style>
 </section>
 
 <section id="products" class="py-24 bg-white px-6">
