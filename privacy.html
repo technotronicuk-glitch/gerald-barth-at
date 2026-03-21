@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz | Gerald Barth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
+    <style>.tech-font { font-family: 'Ethnocentric', sans-serif; }</style>
+</head>
+<body class="bg-zinc-50 font-sans text-zinc-900">
+    <div id="header-placeholder"></div>
+    <main class="max-w-4xl mx-auto py-24 px-6">
+        <div class="bg-white p-10 md:p-16 rounded-2xl shadow-sm border border-zinc-200">
+            <h1 class="tech-font text-3xl mb-8 italic uppercase tracking-tighter text-yellow-500">Datenschutz</h1>
+            
+            <div class="space-y-8 text-sm leading-relaxed text-zinc-600">
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">1. Datenschutz auf einen Blick</h3>
+                    <p>Wir freuen uns über Ihr Interesse an unserem Unternehmen. Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (DSGVO).</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">2. Datenerfassung auf unserer Website</h3>
+                    <p><strong>Kontaktformular / E-Mail:</strong> Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage bei uns gespeichert.</p>
+                    <p class="mt-4"><strong>Bewerbungen (Karriere):</strong> Daten, die Sie uns im Rahmen einer Bewerbung übermitteln (Name, Kontaktdaten, Lebenslauf), werden ausschließlich zum Zwecke des Auswahlverfahrens verwendet und nach Abschluss des Verfahrens gelöscht, sofern keine gesetzliche Aufbewahrungspflicht besteht.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-zinc-900 uppercase mb-2">3. Ihre Rechte</h3>
+                    <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        fetch('header.html').then(res => res.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
