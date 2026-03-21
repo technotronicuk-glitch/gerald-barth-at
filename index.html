@@ -223,51 +223,39 @@
     </style>
 
 <section id="newsletter" class="py-24 bg-[#0f0f0f] px-6 border-t border-white/5">
-    <div class="max-w-4xl mx-auto bg-[#1a1a1a] rounded-3xl p-10 md:p-16 relative overflow-hidden border border-white/5 shadow-2xl">
+    <div class="max-w-5xl mx-auto bg-[#1a1a1a] rounded-[2rem] p-8 md:p-16 relative overflow-hidden border border-white/5 shadow-2xl">
         
-        <div class="absolute top-0 right-0 opacity-5 pointer-events-none">
-            <svg class="w-64 h-64 translate-x-10 -translate-y-10 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        <div class="absolute top-0 right-0 opacity-[0.03] pointer-events-none">
+            <svg class="w-96 h-96 translate-x-20 -translate-y-20 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
         </div>
 
-        <div class="relative z-10 text-center md:text-left grid md:grid-cols-2 gap-10 items-center">
-            <div>
-                <h2 class="tech-font text-3xl text-white uppercase tracking-tighter italic leading-none mb-4">
+        <div class="relative z-10 grid lg:grid-cols-5 gap-12 items-center">
+            <div class="lg:col-span-3">
+                <h2 class="tech-font text-3xl md:text-4xl text-white uppercase tracking-tighter italic leading-none mb-6">
                     Mailing-<span class="text-yellow-500">Liste</span>
                 </h2>
-                <p class="text-zinc-400 text-xs font-bold uppercase tracking-[0.2em] leading-relaxed">
-                    Erhalten Sie Updates zu Materialverfügbarkeit & Projekten in Untergaisberg.
+                <p class="text-zinc-500 text-[11px] font-bold uppercase tracking-[0.2em] leading-relaxed max-w-md">
+                    Erhalten Sie Updates zu Materialverfügbarkeit & Projekten in Untergaisberg direkt in Ihr Postfach.
                 </p>
             </div>
 
-            <form action="https://formspree.io/f/your_formspree_id" method="POST" class="flex flex-col sm:flex-row gap-3">
-                <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required
-                    class="flex-grow px-6 py-4 bg-zinc-800 border border-white/10 rounded-xl focus:outline-none focus:ring-1 focus:ring-yellow-500 transition-all placeholder:text-zinc-500 text-white font-medium">
-                <button type="submit" 
-                    class="bg-yellow-500 text-black font-black uppercase tracking-widest px-8 py-4 rounded-xl hover:bg-white transition shadow-xl active:scale-[0.95] text-[10px]">
-                    Beitreten
-                </button>
-            </form>
+            <div class="lg:col-span-2">
+                <form action="https://formspree.io/f/your_formspree_id" method="POST" class="flex flex-col gap-4">
+                    <div class="relative">
+                        <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required
+                            class="w-full px-6 py-5 bg-zinc-900/50 border border-white/10 rounded-xl focus:outline-none focus:border-yellow-500/50 focus:bg-zinc-800 transition-all placeholder:text-zinc-600 text-white font-medium text-sm">
+                    </div>
+                    <button type="submit" 
+                        class="w-full bg-yellow-500 text-black font-black uppercase tracking-[0.2em] py-5 rounded-xl hover:bg-white transition-all duration-300 shadow-xl active:scale-[0.98] text-[11px]">
+                        Beitreten
+                    </button>
+                    
+                    <p class="text-[9px] text-zinc-600 uppercase font-black tracking-widest text-center mt-2">
+                        Akzeptieren Sie unsere <a href="privacy.html" class="text-zinc-400 underline hover:text-yellow-500 transition">Datenschutzbestimmungen</a>.
+                    </p>
+                </form>
+            </div>
         </div>
-
-        <p class="mt-8 text-[9px] text-zinc-600 uppercase font-black tracking-widest text-center">
-            Mit der Anmeldung akzeptieren Sie unsere <a href="privacy.html" class="text-zinc-400 underline hover:text-yellow-500 transition">Datenschutzbestimmungen</a>.
-        </p>
-    </div>
-</section>
-
-            <form action="https://formspree.io/f/your_formspree_id" method="POST" class="flex flex-col sm:flex-row gap-3">
-                <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required
-                    class="flex-grow px-6 py-4 bg-white/20 border border-black/10 rounded-xl focus:outline-none focus:bg-white transition-all placeholder:text-black/40 text-black font-bold">
-                <button type="submit" 
-                    class="bg-black text-white font-black uppercase tracking-widest px-8 py-4 rounded-xl hover:bg-zinc-800 transition shadow-xl active:scale-[0.95] text-[10px]">
-                    Beitreten
-                </button>
-            </form>
-        </div>
-
-        <p class="mt-8 text-[9px] text-black/40 uppercase font-black tracking-widest text-center">
-            Mit der Anmeldung akzeptieren Sie unsere <a href="privacy.html" class="underline">Datenschutzbestimmungen</a>.
-        </p>
     </div>
 </section>
       
